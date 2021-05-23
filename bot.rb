@@ -14,6 +14,7 @@ sign_up.click
 driver.find_element(name: "name").send_keys "james"
 driver.find_element(name: "password").send_keys "james"
 
-submit = driver.find_element(link_text: "Sign up").click
+submit = driver.find_element(xpath: "/html/body/div[3]/div/div/div/form/button[1]").click
+driver.navigate.to "https://stoxx.netlify.app/"
 
 driver.quit
